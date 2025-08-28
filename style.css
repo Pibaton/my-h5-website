@@ -1,59 +1,51 @@
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #333;
 }
 
-body {
-  height: 100vh;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.page {
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px;
   text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 30px;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.product img {
   width: 100%;
-  max-width: 400px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.hidden {
-  display: none;
-}
-
-.logo {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.login-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input {
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  font-size: 1em;
-}
-
-button {
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background: #ff9800;
-  color: white;
-  font-size: 1em;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #e68900;
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
